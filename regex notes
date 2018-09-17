@@ -1,0 +1,22 @@
+i - ignore case while matching:
+example: /somethingtosearch/i  
+
+g - g flag can be used to search or extract a pattern more than once. 
+example: let testStr = "Repeat, Repeat, Repeat"
+         let repeatRegex = /Repeat/g;
+         testStr.match(repeatRegex);
+output: ["Repeat", "Repeat", "Repeat"];
+
+. - wildcard character or dot or period. We can use it to search for any one character.
+example: let humStr = "I'll hum a song";
+         let hugStr = "Bear hug";
+         let huRegex = /hu./;
+         humStr.match(huRegex); //Returns ["hum"]
+         hugStr.match(huRegex); //Returns ["hug"]
+         
+
+
+Regex methods:
+test() - checks whether the match exists, returns true or false.
+match() - retrieves the matches while matching a regular expression against a string.
+
