@@ -14,6 +14,16 @@ example: let humStr = "I'll hum a song";
          humStr.match(huRegex); //Returns ["hum"]
          hugStr.match(huRegex); //Returns ["hug"]
          
+Character Classes: allow you to define a group of characters you wish to match by placing them inside [ ]
+example: to match 'bag', 'big', 'bug':
+/b[aiu]g/
+- using hyphen (-) we can define a range of characters to match for. (ex: [a-e]) 
+- we can create a set of characters that we don't want to match by using 'negated character set' for which we use ^.(ex: [^aeiou])
+
++ - we can use plus sign to match characters that appear one or more times in a row. 
+* - asterisk or star symbol is used to match characters that appear zero or more times in a row.
+
+         
 
 
 Regex methods:
